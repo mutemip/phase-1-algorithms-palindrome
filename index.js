@@ -1,5 +1,9 @@
-function isPalindrome(word) {
-  // Write your algorithm here
+function isPalindrome(test) {
+    for (let i = 0; i < test.length / 2; i++) {
+      const j = test.length - 1 - i;
+      if (test[i] !== test[j]) return false;
+    }
+    return true;
 }
 
 /* 
@@ -23,3 +27,5 @@ if (require.main === module) {
 }
 
 module.exports = isPalindrome;
+
+
