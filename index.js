@@ -1,9 +1,13 @@
 function isPalindrome(test) {
-    for (let i = 0; i < test.length / 2; i++) {
-      const j = test.length - 1 - i;
-      if (test[i] !== test[j]) return false;
-    }
-    return true;
+
+  let newTest = test;
+  let reverseTest = newTest.split("").reverse().join("");
+  return (newTest === reverseTest) ? true:false;
+    // for (let i = 0; i < test.length / 2; i++) {
+    //   const j = test.length - 1 - i;
+    //   if (test[i] !== test[j]) return false;
+    // }
+    // return true;
 }
 
 /* 
